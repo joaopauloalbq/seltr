@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-notify-send -u critical "$(xsel -o)" "$(python /home/alexander/tran.py "$(xsel -o | sed "s/[\"'<>]//g")")"
+notify-send -u normal -t 2000 "$(xsel -o)" "$(python /home/alexander/tran/tran.py "$(xsel -o | sed "s/[\"'<>]//g")")"
 

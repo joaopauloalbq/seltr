@@ -7,10 +7,10 @@ Translation is performed using Google-translate service, hence Seltr needs Inter
 
 ## Seltr script position arguments:
 
-* first
+* first <br />
   Language the phrase will be translated to (e.g. ru, en, ja). Default - ru
-* second
-  Language the phrase will be translated from (or auto). Default - auto
+* second <br />
+  Language the phrase will be translated from (or 'auto' if text language should be automatically determined). Default - auto
 
 ## Setup
 

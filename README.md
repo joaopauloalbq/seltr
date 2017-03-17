@@ -1,13 +1,30 @@
-Shows gnome notification with translation of currently selected text.
-Translation is done with google-translate service. Needs internet access.
+# Seltr
 
-Seltr and tran.py scripts should be placed in the same directory.
+## Description
 
-To add a keyboard shortcut in GNOME, go to Configuration->Keyboard, add a keyboard shortcut here. Add shortcut name, add path to seltr script, add key combination. After that, selected text can be translated with the help of created keyboard shortcut.
+Shows GNOME notification window with translation of currently selected text.
+Translation is performed using Google-translate service, hence Seltr needs Internet access.
 
-Deps:
-* xsel
-* notify-send
-* python
+## Seltr script position arguments:
+
+* first
+  Language the phrase will be translated to (e.g. ru, en, ja). Default - ru
+* second
+  Language the phrase will be translated from (or auto). Default - auto
+
+## Setup
+
+Copy files *seltr* and *seltr.py* to the same directory.
+
+To add a keyboard shortcut in GNOME, go to Configuration->Keyboard. Add new keyboard shortcut here:
+* add shortcut name
+* add path to seltr script, specify Seltr arguments if necessary
+* add desired keyboard shortcut
+
+After these steps, notification window with translation of the selected text should appear when you press defined keyboard shortcut.
+
+## Dependencies
+
+xsel
 
 

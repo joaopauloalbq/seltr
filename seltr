@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-to_lang=${1:-"ru"}
+to_lang=${1:-"pt"}
 from_lang=${2:-"auto"}
 
 CUR_DIR="$(dirname "$(realpath "$0")")"
-notify-send -u normal -t 2000 "$(xsel -o)" "$(python $CUR_DIR/seltr.py "$(xsel -o | sed "s/[\"'<>]//g")" $to_lang $from_lang)"
+notify-send -u normal -t 2000 "$(xsel -o)" "$(python3 $CUR_DIR/seltr.py "$(xsel -o | sed "s/[\"'<>]//g")" $to_lang $from_lang)"
 
